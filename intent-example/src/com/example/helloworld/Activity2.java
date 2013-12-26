@@ -12,14 +12,16 @@ public class Activity2 extends Activity{
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		tx = (TextView) findViewById(R.id.textView1);
+		
 		super.onCreate(savedInstanceState);
+		
+		setContentView(R.layout.main2);
+		tx = (TextView) findViewById(R.id.textView1);
 		Intent intent = getIntent();
-	    
 	    String fName = intent.getStringExtra("firstname");
 	    String lName = intent.getStringExtra("lastname");
 	    
 	    tx.setText("Your name is: " + fName + " " + lName);
-		setContentView(R.layout.main2);
+		
 	}
 }
