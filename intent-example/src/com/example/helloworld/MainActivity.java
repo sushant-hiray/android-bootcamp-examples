@@ -9,14 +9,19 @@ import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.EditText;
 
 public class MainActivity extends Activity {
 	Button button;
-
+	EditText FName;
+	EditText LName;
+	  
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		FName = (EditText) findViewById(R.id.editText1);
+        LName = (EditText) findViewById(R.id.EditText01);
 		addListenerOnButton();
 	}
 
@@ -38,7 +43,9 @@ public class MainActivity extends Activity {
 			public void onClick(View arg0) {
 				
 				Intent intent = new Intent(context,Activity2.class);
-                startActivity(intent);
+                intent.putExtra("firstname",FName.getText().toString());
+                intent.putExtra("lastname",LName.getText().toString());
+				startActivity(intent);
 
 			}
 

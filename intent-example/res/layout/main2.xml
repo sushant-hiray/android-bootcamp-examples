@@ -7,7 +7,6 @@
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="I&apos;m screen 2 (main2.xml)"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
 </LinearLayout>
