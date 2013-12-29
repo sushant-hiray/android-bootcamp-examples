@@ -32,6 +32,12 @@ public class Vertical extends Activity{
             Intent intentGetMessage=new Intent(this,MainActivity.class);
             startActivity(intentGetMessage);// Activity is started
     }
+	public void goListView(View V)
+    {
+            // Create The  Intent and Start The Activity
+            Intent intentGetMessage=new Intent(this,ListViewActivity.class);
+            startActivity(intentGetMessage);// Activity is started
+    }
 
 
 
