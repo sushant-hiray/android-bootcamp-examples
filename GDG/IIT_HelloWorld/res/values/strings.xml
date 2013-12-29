@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">IIT_HelloWorld</string>
+    <string name="action_settings">Settings</string>
+    <string name="button_title">Click Me</string>
+    <string name="toast_message">You have Me me</string>
+
+</resources>
